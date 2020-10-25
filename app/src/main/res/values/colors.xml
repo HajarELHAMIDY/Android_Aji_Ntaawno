@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#09C6DF</color>
+    <color name="colorPrimaryDark">#09c6df</color>
+    <color name="colorAccent">#292b3d</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="grayLight">#fafafa</color>
+    <color name="grayLightLine">#ededed</color>
+    <color name="espaceOffre">#29B6F6</color>
+    <color name="espaceDemande">#66BB6A</color>
+    <color name="espaceContact">#5C6BC0</color>
+    <color name="propreNous">#42A5F5</color>
+    <color name="ecriture">#37474F</color>
+</resources>

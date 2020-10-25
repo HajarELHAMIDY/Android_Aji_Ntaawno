@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+      >
+
+        <LinearLayout
+            android:background="@mipmap/app_back_pfe2"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_user_profile"
+                android:layout_width="167dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+
+                app:srcCompat="@drawable/profile" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="238dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp">
+
+            <TextView
+                android:id="@+id/userNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="text"
+                android:textColor="@color/startblue"
+
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="360dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="45dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_email"
+            />
+        <TextView
+            android:id="@+id/EmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="votre email"
+
+/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_date_n"
+            />
+        <TextView
+            android:id="@+id/DateNProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp" android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="votre date Naissance"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_phone"
+            />
+        <TextView
+            android:id="@+id/TelProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="votre tel"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

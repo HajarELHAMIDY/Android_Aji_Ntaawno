@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1041312214090",
+    "firebase_url": "https://aji-taawno.firebaseio.com",
+    "project_id": "aji-taawno",
+    "storage_bucket": "aji-taawno.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041312214090:android:0773117962c0a414140ab3",
+        "android_client_info": {
+          "package_name": "com.example.ajitaawno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041312214090-as1fdblrquct65tvdk7g5i25aklkk695.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajitaawno",
+            "certificate_hash": "5ad4fc9f3ccf1db271e3538b719fcea1dd02f08b"
+          }
+        },
+        {
+          "client_id": "1041312214090-rkuvsp3rjb14k5mtlai6gt6q6q0577pq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajitaawno",
+            "certificate_hash": "30e303ec2b716903b73c786b2fba662287270c02"
+          }
+        },
+        {
+          "client_id": "1041312214090-5fbesp3ckjrk9aq5ah7k83ct58i2ie3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYMWrFRnFyqq8xzszLaswteTzy5Ep0-uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041312214090-5fbesp3ckjrk9aq5ah7k83ct58i2ie3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

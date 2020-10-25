@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_demande"
+        android:layout_margin="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="104dp"
+                android:text="Publié le : "
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/post_demande_description"
+                app:layout_constraintStart_toEndOf="@+id/post_demande_userimage" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/grayLightLine"
+
+                app:layout_constraintBottom_toTopOf="@+id/post_demande_image"
+                app:layout_constraintTop_toTopOf="@+id/post_demande_username"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:text="Unité(s)"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/post_demande_image"
+                app:layout_constraintHorizontal_bias="0.26"
+                app:layout_constraintStart_toEndOf="@id/post_demande_nbpiece"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_demande_userimage"
+                android:layout_width="86dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_confirm_demande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="208dp"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_check"
+                android:drawablePadding="5dp"
+                android:padding="4dp"
+
+                android:text="Reservée"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@id/post_demande_image"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/post_demande_userimage"
+                app:layout_constraintTop_toTopOf="@+id/post_demande_image" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginTop="76dp"
+                android:text="A "
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/post_demande_ville"
+                app:layout_constraintHorizontal_bias="0.894"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/post_demande_username"
+                android:layout_width="132dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="UserName"
+                android:textColor="@color/espaceContact"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/post_demande_userimage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/post_demande_date"
+                android:layout_width="67dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="12dp"
+                android:text="Date"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/post_demande_userimage"
+                app:layout_constraintTop_toBottomOf="@+id/post_demande_username" />
+
+            <ImageView
+                android:id="@+id/post_demande_image"
+                android:layout_width="0dp"
+                android:layout_height="256dp"
+                android:layout_marginTop="18dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/post_demande_description"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/post_demande_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="TextView"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_demande_titre" />
+
+            <TextView
+                android:id="@+id/post_demande_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="TextView"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/post_demande_image"
+                app:layout_constraintEnd_toEndOf="@+id/post_demande_nbpiece"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/post_demande_username"
+                app:layout_constraintVertical_bias="0.21" />
+
+            <TextView
+                android:id="@+id/post_demande_nbpiece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:text="np"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+            <Button
+                android:id="@+id/supp_demande_button"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_clear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/post_demande_categorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/post_demande_ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="6dp"
+                android:text="TextView"
+                android:textColor="@color/ecriture"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.015"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_demande_date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

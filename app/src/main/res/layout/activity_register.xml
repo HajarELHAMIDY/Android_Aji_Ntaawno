@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="35dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/ic_person_add_black_24dp" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nom"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_border"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Prénom"
+        android:padding="8dp"
+        android:background="@drawable/round_border"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dateNaissance"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:background="@drawable/round_border"
+        android:hint="Date de naissance"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="8dp"
+        android:background="@drawable/round_border"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/tel"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:background="@drawable/round_border"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_border"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/pwdConfirm"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmation "
+        android:padding="8dp"
+        android:background="@drawable/round_border"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:background="@drawable/round_bg_pwd"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Enregistrer" />
+    <TextView
+            android:id="@+id/login"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Vous avez un compte  ? Connectez-vous "
+            android:textColor="@color/propreNous"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_back_pfe2"
+    tools:context=".DemandeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+
+                android:id="@+id/spinnerCategoryD"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Spinner
+
+                android:id="@+id/spinnerVilleD"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"></Spinner>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewDemande"
+            android:layout_width="match_parent"
+            android:layout_height="566dp" />
+    </LinearLayout>
+
+</FrameLayout>
